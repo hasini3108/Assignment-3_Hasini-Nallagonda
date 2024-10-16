@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+    <form id="player-form" onsubmit="formSubmit(event)">
+      <input
+        type="text"
+        id="player1"
+        placeholder="Please Enter Player 1 name"
+        required
+      />
+      <br /><br />
+      <input
+        type="text"
+        id="player2"
+        placeholder="Please Enter Player 2 name"
+        required
+      />
+      <br /><br />
+      <button type="submit">Let's play</button>
+    </form>
+    <div class="game-board" id="game-board" style="display: none">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <p class="status" id="player" style="display: none">Player's turn</p>
+    <br />
+    <button class="restart" style="display: none" id="restart-btn">
+      Restart Game
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
